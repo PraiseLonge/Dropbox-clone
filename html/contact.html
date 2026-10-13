@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sales - Dropbox</title>
+    
+    <!-- Link to your main CSS (header, footer, variables) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link to the specific Contact page CSS -->
+    <link rel="stylesheet" href="../css/contact.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (Same as index.html) -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../images/dropbox logo.jpg" alt="Dropbox Logo" class="logo-icon">
+                <span>Dropbox</span>
+            </a>
+            
+            <div class="nav-left">
+                <a href="#" class="nav-link">Products</a>
+                <a href="#" class="nav-link">Solutions</a>
+                <a href="#" class="nav-link">Business</a>
+                <a href="#" class="nav-link">Pricing</a>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <span>Contact sales</span>
+                </a>
+                <a href="#" class="nav-link">Get app <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="login.html" class="nav-link">Sign up</a>
+                <a href="login.html" class="nav-link">Log in</a>
+                <a href="login.html" class="nav-button">Get started</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Contact Section -->
+    <main class="contact-main">
+        <div class="contact-container">
+            
+            <!-- Left Side: Information -->
+            <div class="contact-info">
+                <h1>Contact our sales team</h1>
+                <p class="contact-subtitle">Learn how Dropbox can help your business streamline collaboration and increase productivity.</p>
+                
+                <p class="contact-intro">By connecting with our team, you can expect we'll:</p>
+                <ul class="contact-list">
+                    <li>Understand your current business processes</li>
+                    <li>Explore how Dropbox's functionality can help drastically improve your team's workflow</li>
+                    <li>Determine the ideal Dropbox plan and chat through pricing options</li>
+                    <li>Answer any additional, specific questions you have</li>
+                </ul>
+
+                <h3>Looking for immediate support?</h3>
+                <ul class="contact-list support-list">
+                    <li>For sales, call <strong>1-855-237-6726</strong></li>
+                    <li>For technical and/or billing help, check our <a href="#">FAQ</a>.</li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Work Email Address:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Company Name:</label>
+                            <input type="text" id="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <select id="country">
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <!-- Add more countries as needed -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="companySize">Company Size:</label>
+                            <select id="companySize">
+                                <option value="">Select...</option>
+                                <option value="1-10">1-10</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51-200">51-200</option>
+                                <option value="201+">201+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="users">Potential Users:</label>
+                            <select id="users">
+                                <option value="">Select...</option>
+                                <option value="1-10">1-10</option>
+                                <option value="11-50">11-50</option>
+                                <option value="51+">51+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="help">How can our sales team help you?</label>
+                        <select id="help">
+                            <option value="">Select...</option>
+                            <option value="Pricing">Pricing</option>
+                            <option value="Product Demo">Product Demo</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="product">Primary Product of Interest</label>
+                        <select id="product">
+                            <option value="">Select...</option>
+                            <option value="Dropbox Business">Dropbox Business</option>
+                            <option value="Dropbox Enterprise">Dropbox Enterprise</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="4" placeholder="Let us know any additional information that is relevant for your business requirements."></textarea>
+                    </div>
+
+                    <p class="privacy-text">
+                        By submitting this form, I authorize Dropbox to contact me about product offerings, services, events, and other marketing materials. I may unsubscribe at any time. To learn more, see our <a href="#">Privacy Policy</a>.
+                    </p>
+
+                    <button type="submit" class="btn-contact">Contact Sales</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Brand Logos Section -->
+    <section class="contact-logos">
+        <div class="logo-container">
+            <!-- Using the images you already have in your folder as requested -->
+            <img src="../images/dropbox logo 1.png" alt="Brand 1">
+            <img src="../images/dropbox logo 2.jpg" alt="Brand 2">
+            <img src="../images/dropbox logo 3.jpg" alt="Brand 3">
+            <img src="../images/dropbox logo 4.png" alt="Brand 4">
+            <img src="../images/dropbox logo 5.jpg" alt="Brand 5">
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Dropbox</h4>
+                    <ul>
+                        <li><a href="#">Desktop app</a></li>
+                        <li><a href="#">Mobile app</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Early access</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Free tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Plus</a></li>
+                        <li><a href="#">Professional</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Dash</a></li>
+                        <li><a href="#">DocSend</a></li>
+                        <li><a href="#">Dropbox Sign</a></li>
+                        <li><a href="#">Reclaim.ai</a></li>
+                        <li><a href="#">Dropbox Fax</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Product updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Send large files</a></li>
+                        <li><a href="#">Send long videos</a></li>
+                        <li><a href="#">Cloud photo storage</a></li>
+                        <li><a href="#">Secure file transfer</a></li>
+                        <li><a href="#">Cloud backup</a></li>
+                        <li><a href="#">Edit PDFs</a></li>
+                        <li><a href="#">Electronic signatures</a></li>
+                        <li><a href="#">Convert to PDF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy & terms</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Cookies & CCPA preferences</a></li>
+                        <li><a href="#">AI principles</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Learning resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">Resources library</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Community forums</a></li>
+                        <li><a href="#">Referrals</a></li>
+                        <li><a href="#">Reseller partners</a></li>
+                        <li><a href="#">Integration partners</a></li>
+                        <li><a href="#">Find a partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                        <li><a href="#">Corporate responsibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="language-selector">
+                    <i class="fa-solid fa-globe"></i> English (United States) <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* =====================================================
+   CONTACT SALES PAGE STYLES
+===================================================== */
+
+/* Main Layout */
+.contact-main {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+/* Left Side: Info */
+.contact-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #1e1919;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #6b6b6b;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.contact-intro {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1e1919;
+}
+
+.contact-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 32px;
+}
+
+.contact-list li {
+    font-size: 16px;
+    color: #1e1919;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1e1919;
+}
+
+.support-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.support-list a {
+    color: #0061ff;
+    text-decoration: underline;
+}
+
+/* Right Side: Form */
+.contact-form-wrapper {
+    background-color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e1919;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #1e1919;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0061ff;
+    box-shadow: 0 0 0 3px rgba(0, 97, 255, 0.15);
+}
+
+.privacy-text {
+    font-size: 13px;
+    color: #6b6b6b;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+.privacy-text a {
+    color: #0061ff;
+    text-decoration: underline;
+}
+
+.btn-contact {
+    padding: 14px 24px;
+    background-color: #0061ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    background-color: #0052cc;
+}
+
+/* Brand Logos Section */
+.contact-logos {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.logo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.logo-container img {
+    height: 40px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .contact-info h1 {
+        font-size: 36px;
+    }
+    .contact-logos .logo-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    .contact-main {
+        padding: 40px 20px;
+    }
+    .contact-info h1 {
+        font-size: 32px;
+    }
+    .logo-container img {
+        height: 30px;
+        max-width: 100px;
+    }
+}

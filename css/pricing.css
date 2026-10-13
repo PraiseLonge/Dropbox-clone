@@ -1,0 +1,584 @@
+/* =====================================================
+   PRICING PAGE STYLES
+===================================================== */
+
+.pricing-main {
+    background-color: #ffffff;
+    color: #1e1919;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1. Hero Section */
+.pricing-hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.pricing-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.pricing-hero p {
+    font-size: 18px;
+    color: #6b6b6b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 2. Billing Toggle & Help */
+.pricing-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.billing-toggle {
+    display: flex;
+    gap: 24px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.radio-label input {
+    accent-color: #0061ff;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.help-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0061ff;
+    border: 1px solid #0061ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #f0f7ff;
+}
+
+.help-link:hover {
+    background: #e0efff;
+}
+
+/* 3. 3-Column Pricing Grid */
+.pricing-grid-container {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.featured-card {
+    border: 2px solid #0061ff;
+    box-shadow: 0 10px 30px rgba(0, 97, 255, 0.1);
+}
+
+.best-value-tag {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c3f53c; /* Yellow-green */
+    color: #1e1919;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.card-header {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.plan-audience {
+    display: block;
+    font-size: 13px;
+    color: #6b6b6b;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.plan-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e1919;
+}
+
+.plan-price span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
+.card-action {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-card {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #1e1919;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-card:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-blue {
+    background-color: #0061ff;
+    border-color: #0061ff;
+    color: #ffffff;
+}
+
+.btn-blue:hover {
+    background-color: #0052cc;
+}
+
+.btn-text-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e1919;
+    text-decoration: underline;
+}
+
+.btn-text-link:hover {
+    color: #0061ff;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: #1e1919;
+    line-height: 1.5;
+}
+
+.plan-features li i {
+    color: #6b6b6b;
+    width: 18px;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.view-all-link {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e1919;
+    text-decoration: underline;
+    margin-top: auto;
+}
+
+.view-all-link:hover {
+    color: #0061ff;
+}
+
+/* 4. Basic & Enterprise Section */
+.basic-enterprise {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.basic-enterprise-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+
+.be-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 40px 32px;
+    background: #fafafa;
+}
+
+.be-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.be-price {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.be-desc {
+    font-size: 15px;
+    color: #6b6b6b;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.btn-be-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #1e1919;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1e1919;
+    transition: background 0.2s ease;
+}
+
+.btn-be-outline:hover {
+    background: #f0f0f0;
+}
+
+/* 5. Add-ons Section */
+.addons-section {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.addons-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.addon-banner {
+    display: inline-block;
+    background-color: #e6f7d4;
+    color: #1e1919;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.addon-banner i {
+    color: #0061ff;
+    margin-right: 8px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    text-align: left;
+}
+
+.addon-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 32px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+}
+
+.addon-tag {
+    background: #f0f0f0;
+    color: #6b6b6b;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.addon-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.addon-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.addon-price {
+    font-size: 15px;
+    color: #6b6b6b;
+    font-weight: 500;
+}
+
+.addon-desc {
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-addon {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #0061ff;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btn-addon:hover {
+    background-color: #0052cc;
+}
+
+.addon-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0061ff;
+    text-decoration: underline;
+}
+
+/* 6. Compare Plans Section */
+.compare-section {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.compare-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.compare-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e1919;
+    margin-bottom: 40px;
+}
+
+.compare-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    text-align: left;
+}
+
+.compare-col {
+    padding: 24px;
+    background: #fafafa;
+    border-radius: 12px;
+}
+
+.compare-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.compare-col h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.compare-col p {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.small-text {
+    font-size: 12px !important;
+    color: #a0a0a0 !important;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #a0a0a0;
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* 7. FAQ Section */
+.faq-section {
+    max-width: 900px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-list details {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 24px 0;
+    cursor: pointer;
+}
+
+.faq-list details[open] {
+    padding-bottom: 24px;
+}
+
+.faq-list summary {
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none; /* Hide default triangle */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e1919;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none; /* Hide default triangle in Chrome/Safari */
+}
+
+.faq-list summary::after {
+    content: "\f078"; /* FontAwesome chevron-down */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: #6b6b6b;
+    transition: transform 0.2s ease;
+}
+
+.faq-list details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.faq-list p {
+    margin-top: 16px;
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 992px) {
+    .pricing-grid,
+    .basic-enterprise-grid,
+    .addons-grid,
+    .compare-grid {
+        grid-template-columns: 1fr;
+    }
+    .pricing-hero h1 {
+        font-size: 36px;
+    }
+    .pricing-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-hero h1 {
+        font-size: 28px;
+    }
+    .pricing-hero p {
+        font-size: 16px;
+    }
+    .pricing-card {
+        padding: 24px;
+    }
+    .be-card {
+        padding: 24px;
+    }
+    .addon-card {
+        padding: 24px;
+    }
+    .compare-col {
+        padding: 16px;
+    }
+    .faq-list summary {
+        font-size: 16px;
+    }
+}

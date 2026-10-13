@@ -1,0 +1,167 @@
+/* =====================================================
+   LOGIN / SIGNUP PAGE STYLES
+===================================================== */
+
+/* Main page layout */
+.login-page {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1919;
+}
+
+/* Header */
+.login-header {
+    padding: 24px 32px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.login-header .logo {
+    color: #1e1919;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.login-header .logo-icon {
+    fill: #0061ff;
+}
+
+/* Centering the card */
+.login-main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* The white login card */
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 48px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.login-card h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 1.3;
+    color: #1e1919;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e1919;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-btn:hover {
+    background-color: #f9f9f9;
+    border-color: #999999;
+}
+
+.social-btn i {
+    font-size: 18px;
+}
+
+/* Divider (the "or" line) */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    color: #6b6b6b;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider span {
+    padding: 0 16px;
+}
+
+/* Email Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-input:focus {
+    border-color: #0061ff;
+    box-shadow: 0 0 0 3px rgba(0, 97, 255, 0.15);
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0061ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.continue-btn:hover {
+    background-color: #0052cc;
+}
+
+/* Mobile adjustments for login page */
+@media (max-width: 500px) {
+    .login-card {
+        padding: 32px 24px;
+    }
+    .login-card h1 {
+        font-size: 24px;
+    }
+}

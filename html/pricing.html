@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Dropbox Plan - Dropbox</title>
+    
+    <!-- Link to your main CSS (header, footer, variables) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Link to the specific Pricing page CSS -->
+    <link rel="stylesheet" href="../css/pricing.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header (Same as index.html) -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../images/dropbox logo.jpg" alt="Dropbox Logo" class="logo-icon">
+                <span>Dropbox</span>
+            </a>
+            
+            <div class="nav-left">
+                <a href="#" class="nav-link">Products <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i></a>
+                <a href="#" class="nav-link">Solutions <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i></a>
+                <a href="#" class="nav-link">Business</a>
+                <a href="pricing.html" class="nav-link" style="color: var(--blue);">Pricing</a>
+            </div>
+
+            <div class="nav-right">
+                <a href="contact.html" class="nav-link">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <span>Contact sales</span>
+                </a>
+                <a href="#" class="nav-link">Get app <i class="fa-solid fa-chevron-down" style="font-size:10px;"></i></a>
+                <a href="login.html" class="nav-link">Sign up</a>
+                <a href="login.html" class="nav-link">Log in</a>
+                <a href="login.html" class="nav-button">Get started</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Pricing Content -->
+    <main class="pricing-main">
+        
+        <!-- Hero Section -->
+        <section class="pricing-hero">
+            <h1>Go from idea to done with Dropbox</h1>
+            <p>Store and share files. Sign and send documents. All with Dropbox.</p>
+        </section>
+
+        <!-- Billing Toggle & Help -->
+        <section class="pricing-controls">
+            <div class="billing-toggle">
+                <label class="radio-label">
+                    <input type="radio" name="billing" value="monthly"> Billed monthly
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="billing" value="yearly" checked> Billed yearly
+                </label>
+            </div>
+            <a href="#" class="help-link"><i class="fa-regular fa-circle-question"></i> Help me choose</a>
+        </section>
+
+        <!-- 3-Column Pricing Grid -->
+        <section class="pricing-grid-container">
+            <div class="pricing-grid">
+                
+                <!-- Plan 1: Plus -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <span class="plan-audience">For personal use</span>
+                        <h2>Plus</h2>
+                        <div class="plan-price">$9.99 <span>/ month</span></div>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-card">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-user"></i> For 1 person</li>
+                        <li><i class="fa-solid fa-hard-drive"></i> 2 TB of storage</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Stay connected across all devices</li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i> 30 days to restore deleted files</li>
+                        <li><i class="fa-solid fa-arrow-up-from-bracket"></i> Transfer files up to 50 GB</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> Work with your files in AI tools</li>
+                        <li><i class="fa-solid fa-file-pen"></i> Edit PDFs and get signatures</li>
+                    </ul>
+                    <a href="#" class="view-all-link">View all features</a>
+                </div>
+
+                <!-- Plan 2: Standard -->
+                <div class="pricing-card featured-card">
+                    <div class="best-value-tag"><i class="fa-solid fa-bolt"></i> Best Value</div>
+                    <div class="card-header">
+                        <span class="plan-audience">For teams and professionals</span>
+                        <h2>Standard</h2>
+                        <div class="plan-price">$15 <span>/ user / month</span></div>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-card btn-blue">Try for free <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-text-link">or buy now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-users"></i> For 1 person or more</li>
+                        <li><i class="fa-solid fa-hard-drive"></i> Starts at 3 TB for the team</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Stay connected across all devices</li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i> 180 days to restore deleted files</li>
+                        <li><i class="fa-solid fa-arrow-up-from-bracket"></i> Transfer files up to 100 GB</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> Work with your files in AI tools</li>
+                        <li><i class="fa-solid fa-file-pen"></i> Edit PDFs and get signatures</li>
+                        <li><i class="fa-solid fa-brush"></i> Brand your files to share</li>
+                        <li><i class="fa-solid fa-lock"></i> Password protect files</li>
+                        <li><i class="fa-solid fa-folder-tree"></i> Get team folders for organization</li>
+                        <li><i class="fa-solid fa-share-nodes"></i> Manage team sharing</li>
+                        <li><i class="fa-solid fa-user-group"></i> Create groups and roles</li>
+                        <li><i class="fa-solid fa-user-shield"></i> Admin control</li>
+                    </ul>
+                    <a href="#" class="view-all-link">View all features</a>
+                </div>
+
+                <!-- Plan 3: Advanced -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <span class="plan-audience">For companies</span>
+                        <h2>Advanced</h2>
+                        <div class="plan-price">$24 <span>/ user / month</span></div>
+                    </div>
+                    <div class="card-action">
+                        <a href="#" class="btn-card btn-blue">Try for free <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-text-link">or buy now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-users"></i> For 3 people or more</li>
+                        <li><i class="fa-solid fa-hard-drive"></i> Starts at 15 TB for the team</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Stay connected across all devices</li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i> 1 year to restore deleted files</li>
+                        <li><i class="fa-solid fa-arrow-up-from-bracket"></i> Transfer files up to 100 GB</li>
+                        <li><i class="fa-solid fa-wand-magic-sparkles"></i> Work with your files in AI tools</li>
+                        <li><i class="fa-solid fa-file-pen"></i> Edit PDFs and get signatures</li>
+                        <li><i class="fa-solid fa-brush"></i> Brand your files to share</li>
+                        <li><i class="fa-solid fa-lock"></i> Password protect files</li>
+                        <li><i class="fa-solid fa-folder-tree"></i> Get team folders for organization</li>
+                        <li><i class="fa-solid fa-share-nodes"></i> Manage team sharing</li>
+                        <li><i class="fa-solid fa-user-group"></i> Create groups and roles</li>
+                        <li><i class="fa-solid fa-sitemap"></i> Tiered-admin management</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> End-to-end encryption</li>
+                        <li><i class="fa-solid fa-key"></i> Advanced key management</li>
+                        <li><i class="fa-solid fa-clipboard-check"></i> Compliance tracking</li>
+                        <li><i class="fa-solid fa-right-to-bracket"></i> Single sign-on</li>
+                    </ul>
+                    <a href="#" class="view-all-link">View all features</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Basic & Enterprise Section -->
+        <section class="basic-enterprise">
+            <div class="basic-enterprise-grid">
+                
+                <div class="be-card">
+                    <h3>Basic</h3>
+                    <p class="be-price">Free</p>
+                    <p class="be-desc">2 GB to store and share your files</p>
+                    <a href="#" class="btn-be-outline">Get Basic</a>
+                </div>
+
+                <div class="be-card">
+                    <h3>Enterprise</h3>
+                    <p class="be-price">Contact us for pricing</p>
+                    <p class="be-desc">Customize to your business with enterprise-grade security, integrations with best-in-class security solutions, and live support from dedicated experts</p>
+                    <a href="contact.html" class="btn-be-outline">Contact us</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Add-ons Section -->
+        <section class="addons-section">
+            <h2>Enhance your Dropbox plan with Add-ons</h2>
+            <div class="addon-banner">
+                <i class="fa-solid fa-gift"></i> Get three months of Dropbox free when you add Replay or Extended Version History to your plan
+            </div>
+            <div class="addons-grid">
+                
+                <div class="addon-card">
+                    <div class="addon-tag">Video collaboration</div>
+                    <div class="addon-content">
+                        <h3>Replay</h3>
+                        <p class="addon-price">Starting at $10 / month</p>
+                        <p class="addon-desc">Review and approve video projects faster. Leave comments on the exact frame and get sign-off in one place.</p>
+                        <a href="#" class="btn-addon">Add to plan</a>
+                        <a href="#" class="addon-link">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="addon-card">
+                    <div class="addon-tag">Restore backups</div>
+                    <div class="addon-content">
+                        <h3>Extended Version History</h3>
+                        <p class="addon-price">Starting at $3.99 / month</p>
+                        <p class="addon-desc">Recover files and folders deleted up to 1 year ago. Never lose important work to accidental deletions or ransomware.</p>
+                        <a href="#" class="btn-addon">Add to plan</a>
+                        <a href="#" class="addon-link">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Compare Plans Section -->
+        <section class="compare-section">
+            <h2>Compare plans</h2>
+            <p class="compare-subtitle">How Dropbox compares:</p>
+            
+            <div class="compare-grid">
+                <div class="compare-col">
+                    <span class="compare-tag">VS GOOGLE DRIVE</span>
+                    <h3>Work across teams, tools, and file types</h3>
+                    <p>Google Drive works best for teams fully committed to Google Workspace. Dropbox is platform-agnostic, making it easier to collaborate on Microsoft, Adobe, video, and other professional file types — especially with partners outside your organization and it can be faster for real work at scale (e.g., 71% faster uploads for folders with 10,000 files*).</p>
+                </div>
+                <div class="compare-col">
+                    <span class="compare-tag">VS MICROSOFT ONEDRIVE</span>
+                    <h3>Clear collaboration — without the complexity</h3>
+                    <p>OneDrive spreads work across multiple Microsoft tools, which can make collaboration harder to follow, especially with external partners. Dropbox gives teams a single, clear place to work, with fast syncing and built-in tools for reviewing, sharing, and managing files across devices — including performance advantages like 21x faster uploads of large folders*.</p>
+                    <p class="small-text">*with 10,000 1 KB files</p>
+                </div>
+                <div class="compare-col">
+                    <span class="compare-tag">VS BOX</span>
+                    <h3>Powerful collaboration, designed to scale with teams</h3>
+                    <p>Box is optimized for highly regulated, large-enterprise environments with extensive configuration needs. Dropbox is designed to scale from small teams to large organizations, combining strong security with fast performance and simpler collaboration — especially when work spans internal teams and external partners — with reported performance wins like 95% faster end-to-end sync across devices*.</p>
+                    <p class="small-text">*on 25 MB files</p>
+                </div>
+            </div>
+            <p class="disclaimer">*based on a 2023 Principled Technologies study sponsored by Dropbox</p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+                
+                <details>
+                    <summary>Which plan is best for me?</summary>
+                    <p>It depends on whether you are an individual, a small team, or a large company. Plus is great for personal use, Standard for teams needing collaboration features, and Advanced for companies requiring top-tier security and admin controls.</p>
+                </details>
+
+                <details>
+                    <summary>We're a very small team (1-2 people). Do we need a team plan?</summary>
+                    <p>While you can use Plus individually, team plans like Standard start at 1 person and offer collaborative features like shared team folders and centralized admin controls that make working together much easier.</p>
+                </details>
+
+                <details>
+                    <summary>What is the difference between team folders and personal folders?</summary>
+                    <p>Personal folders are private to you. Team folders are shared spaces where multiple team members can access, edit, and manage files together, ensuring everyone has the latest version.</p>
+                </details>
+
+                <details>
+                    <summary>Do shared folders count against my team's storage?</summary>
+                    <p>Yes, files stored in shared team folders count against the total storage pool of the team plan.</p>
+                </details>
+
+                <details>
+                    <summary>Can clients upload files without a Dropbox account?</summary>
+                    <p>Yes, with File Requests, clients can upload files to a specific folder using a simple link without needing to create a Dropbox account.</p>
+                </details>
+
+                <details>
+                    <summary>Can upload-only users be blocked from seeing other files?</summary>
+                    <p>Yes, you can set permissions on file requests to allow uploads without giving view or edit access to the rest of the folder contents.</p>
+                </details>
+
+                <details>
+                    <summary>What do the team free trials include, and what happens when they end?</summary>
+                    <p>Free trials give you full access to the team plan features for a limited time. When the trial ends, your account will revert to a free Basic plan unless you choose to purchase a subscription.</p>
+                </details>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Dropbox</h4>
+                    <ul>
+                        <li><a href="#">Desktop app</a></li>
+                        <li><a href="#">Mobile app</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Early access</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Free tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Plus</a></li>
+                        <li><a href="#">Professional</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Dash</a></li>
+                        <li><a href="#">DocSend</a></li>
+                        <li><a href="#">Dropbox Sign</a></li>
+                        <li><a href="#">Reclaim.ai</a></li>
+                        <li><a href="#">Dropbox Fax</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Product updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Send large files</a></li>
+                        <li><a href="#">Send long videos</a></li>
+                        <li><a href="#">Cloud photo storage</a></li>
+                        <li><a href="#">Secure file transfer</a></li>
+                        <li><a href="#">Cloud backup</a></li>
+                        <li><a href="#">Edit PDFs</a></li>
+                        <li><a href="#">Electronic signatures</a></li>
+                        <li><a href="#">Convert to PDF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy & terms</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        <li><a href="#">Cookies & CCPA preferences</a></li>
+                        <li><a href="#">AI principles</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Learning resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">Resources library</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Community forums</a></li>
+                        <li><a href="#">Referrals</a></li>
+                        <li><a href="#">Reseller partners</a></li>
+                        <li><a href="#">Integration partners</a></li>
+                        <li><a href="#">Find a partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                        <li><a href="#">Corporate responsibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="language-selector">
+                    <i class="fa-solid fa-globe"></i> English (United States) <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

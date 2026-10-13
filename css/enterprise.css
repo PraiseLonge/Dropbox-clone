@@ -1,0 +1,504 @@
+/* =====================================================
+   ENTERPRISE PAGE STYLES
+===================================================== */
+
+.enterprise-main {
+    background-color: #ffffff;
+    color: #1e1919;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global Container for consistent spacing */
+.enterprise-main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. Hero Section */
+.enterprise-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-tagline {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b6b6b;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 2. Security Promise Section */
+.security-promise {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.security-promise h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.security-promise p {
+    font-size: 18px;
+    color: #6b6b6b;
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0061ff;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* Accordion layout */
+.accordion-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 24px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e1919;
+}
+
+.accordion-header i {
+    color: #6b6b6b;
+    font-size: 14px;
+}
+
+.accordion-body {
+    margin-top: 16px;
+    display: block;
+}
+
+.accordion-body p {
+    font-size: 16px;
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.accordion-body .text-link {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.accordion-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.accordion-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 3. Enterprise Features Section */
+.enterprise-features {
+    padding: 80px 0;
+}
+
+.enterprise-features h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.feature-row:last-child {
+    margin-bottom: 0;
+}
+
+.feature-row.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-img {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.feature-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-tag {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.feature-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.feature-text p {
+    font-size: 16px;
+    color: #6b6b6b;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.btn-outline-dark {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #1e1919;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1e1919;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    margin-top: 16px;
+}
+
+.btn-outline-dark:hover {
+    background: #f0f0f0;
+}
+
+/* 4. Dark Banner Section */
+.dark-banner {
+    background-color: #1e1919;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.dark-banner h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    color: #c0bdbd;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.banner-col h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.banner-col p {
+    font-size: 15px;
+    color: #c0bdbd;
+    line-height: 1.6;
+}
+
+/* 5. Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.stats-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.stats-subtitle {
+    font-size: 18px;
+    color: #6b6b6b;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+.stats-section .text-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-item i {
+    font-size: 32px;
+    color: #0061ff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.stat-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.stat-item p {
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* 6. Testimonial Section */
+.testimonial-section {
+    padding: 80px 0;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.testimonial-quote {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.testimonial-quote p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1e1919;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.testimonial-quote .text-link {
+    margin-bottom: 24px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 32px;
+}
+
+.author-info strong {
+    font-size: 16px;
+    color: #1e1919;
+}
+
+.author-info span {
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+.slider-btn {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #1e1919;
+    transition: background 0.2s ease;
+}
+
+.slider-btn:hover {
+    background: #f0f0f0;
+}
+
+.company-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.company-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.company-stat h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.company-stat p {
+    font-size: 15px;
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+@media (max-width: 992px) {
+    .enterprise-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .accordion-section {
+        flex-direction: column;
+    }
+    .accordion-image {
+        width: 100%;
+    }
+    .feature-row, .feature-row.row-reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .feature-img {
+        width: 100%;
+    }
+    .banner-grid, .stats-grid, .company-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .security-promise h2, .enterprise-features h2 {
+        font-size: 28px;
+    }
+    .feature-text h3 {
+        font-size: 24px;
+    }
+    .banner-grid, .stats-grid, .company-stats {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-quote p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in or Sign up - Dropbox</title>
+    
+    <!-- Link to CSS files using ../ to go up one folder level -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    
+    <!-- Font Awesome for the Apple, Google, and Microsoft icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="login-page">
+
+    <!-- Simple Header with just the Logo -->
+    <header class="login-header">
+        <a href="index.html" class="logo">
+            <svg class="logo-icon" width="30" height="30" viewBox="0 0 24 24" fill="#0061ff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 2L0 6L6 10L12 6L6 2Z M18 2L12 6L18 10L24 6L18 2Z M0 14L6 18L12 14L6 10L0 14Z M18 10L12 14L18 18L24 14L18 10Z M6 19.5L12 15.5L18 19.5L12 23.5L6 19.5Z"/>
+            </svg>
+            <span>Dropbox</span>
+        </a>
+    </header>
+
+    <!-- Main Login Content -->
+    <main class="login-main">
+        <div class="login-card">
+            <h1>Log in or sign up for free</h1>
+
+            <!-- Social Login Buttons -->
+            <div class="social-buttons">
+                <button class="social-btn">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Continue with Apple</span>
+                </button>
+                <button class="social-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Continue with Google</span>
+                </button>
+                <button class="social-btn">
+                    <i class="fa-brands fa-microsoft"></i>
+                    <span>Continue with Microsoft</span>
+                </button>
+            </div>
+
+            <!-- Divider ("or") -->
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <!-- Email Form -->
+            <form class="login-form">
+                <input type="email" placeholder="name@company.com" class="email-input" required>
+                <button type="submit" class="continue-btn">Continue</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
